@@ -103,7 +103,7 @@ a {
   transition-duration: 0s !important;
 }
 
-a,
+a, // добавляем кликабельную зону для кнопок до рекомендуемых 44px
 button {
   &[aria-label] {
     position: relative;
