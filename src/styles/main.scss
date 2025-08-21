@@ -4,5 +4,9 @@
 @use 'utils';
 @use 'globals';
 
+@use 'base/icon';
+@use 'base/logo';
+@use 'base/button';
+@use 'base/burger-button';
 
 @use 'blocks/header';
