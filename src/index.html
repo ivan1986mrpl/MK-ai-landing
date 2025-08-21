@@ -1,110 +1,75 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="description project" />
-    <title>Future Tech | Home</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/img/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="./styles/main.scss" />
-    <script type="module" src="./js/app.js" defer></script>
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <!--58-->
-        <div class="header__promo">
-          <div class="header__promo-inner container">
-            <a href="#" class="header__promo-link"
-              ><span class="icon icon__yellow-arrow"
-                >Subscribe to our Newsletter For New & latest Blogs and
-                Resources</span
-              ></a
-            >
-          </div>
-        </div>
-        <div class="header__body">
-          <div class="header__body-inner container">
-            <a
-              href="#"
-              class="header__logo logo"
-              aria-label="home"
-              title="Home"
-            >
-              <img src="./assets/img/logo.svg" alt="" width="179" height="50" />
-            </a>
-            <div class="header__overlay" data-js-header-overlay>
-              <nav class="header__menu">
-                <ul class="header__menu-list">
-                  <li class="header__menu-item">
-                    <a class="header__menu-link is-active" href="./index.html"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="header__menu-item">
-                    <a class="header__menu-link" href="./news.html">News</a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a class="header__menu-link" href="./podcasts.html"
-                      >Podcasts</a
-                    >
-                  </li>
-                  <li class="header__menu-item">
-                    <a class="header__menu-link" href="./resources.html"
-                      >Resources</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-              <a
-                class="header__contact-us-link button button--accent"
-                href="./contacts.html"
-              >
-                Contact Us
-              </a>
-            </div>
-            <button
-              class="header__burger-button burger-button visible-mobile"
-              type="button"
-              aria-label="Open menu"
-              title="Open menu"
-              data-js-header-burger-button
-            >
-              <span class="burger-button__line"></span>
-              <span class="burger-button__line"></span>
-              <span class="burger-button__line"></span>
-            </button>
-          </div>
-        </div>
-      </header>
-      <main class="page">
-        <section id="hero" class="page__hero hero">
-          <div class="hero__container"></div>
-        </section>
-      </main>
-      <footer id="footer" class="footer">
-        <div class="footer__container"></div>
-      </footer>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="description project" />
+  <title>Future Tech | Home</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
+  <link rel="stylesheet" href="./styles/main.scss" />
+  <script type="module" src="./js/app.js" defer></script>
+</head>
 
-      <!-- 
+<body>
+  <div class="wrapper">
+    <header class="header" data-js-header>
+      <div class="header__promo">
+        <div class="header__promo-inner container">
+          <a href="#" class="header__promo-link"><span class="icon icon--yellow-arrow">Subscribe to our Newsletter For New & latest Blogs and Resources</span></a>
+        </div>
+      </div>
+      <div class="header__body">
+        <div class="header__body-inner container">
+          <a href="#" class="header__logo logo" aria-label="home" title="Home">
+            <img src="./assets/img/logo.svg" alt="" width="179" height="50" />
+          </a>
+          <div class="header__overlay" data-js-header-overlay>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a class="header__menu-link is-active" href="./index.html">Home</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="./news.html">News</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="./podcasts.html">Podcasts</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="./resources.html">Resources</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="header__contact-us-link button button--accent" href="./contacts.html">Contact Us</a>
+          </div>
+          <button class="header__burger-button burger-button visible-mobile" type="button" aria-label="Open menu"
+            title="Open menu" data-js-header-burger-button>
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section id="hero" class="page__hero hero">
+        <div class="hero__container"></div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="footer__container"></div>
+    </footer>
+
+    <!-- 
 		<div class="scroll-up">
 			<svg class="scroll-up__svg" xmlns="" viewBox="-2 -2 52 52">
 				<path class="scroll-up__path" d="M 24,0 a24,24 0 0,1 0,48 a24,24 0 0,1 0,-48" />
 			</svg>
 		</div> -->
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>

@@ -6,7 +6,7 @@
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: rem(8.5) rem(4.25);
+  padding: rem(8) rem(4);
   color: var(--color-light);
   background-color: transparent;
   border: none;
@@ -46,3 +46,12 @@
     }
   }
 }
+
+/* 
+<button class="header__burger-button burger-button visible-mobile" type="button" aria-label="Open menu"
+  title="Open menu" data-js-header-burger-button>
+  <span class="burger-button__line"></span>
+  <span class="burger-button__line"></span>
+  <span class="burger-button__line"></span>
+</button>
+*/
