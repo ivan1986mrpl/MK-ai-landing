@@ -1,17 +1,17 @@
 // Импорт глобальных переменных среды выполнения (например, window, document для браузера)
-import globals from 'globals';
+// import globals from 'globals';
 
 // Импорт утилиты для декларативной конфигурации ESLint
-import { defineConfig } from 'eslint/config';
+// import { defineConfig } from 'eslint/config';
 
 // Импорт плагина Prettier для ESLint — позволяет выводить ошибки форматирования как ESLint-ошибки
-import prettierPlugin from 'eslint-plugin-prettier';
+// import prettierPlugin from 'eslint-plugin-prettier';
 
 // Импорт конфигурации правил Prettier, чтобы отключить конфликтующие правила ESLint
-import prettierConfig from 'eslint-config-prettier';
+// import prettierConfig from 'eslint-config-prettier';
 
 // Импорт парсера Babel для ESLint — нужен, чтобы ESLint понимал современные возможности JS
-import babelParser from '@babel/eslint-parser';
+// import babelParser from '@babel/eslint-parser';
 
 // Список путей и файлов, которые должны быть проигнорированы линтером
 const ignores = [
