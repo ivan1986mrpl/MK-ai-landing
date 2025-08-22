@@ -2,12 +2,28 @@
 
 .soc1al {
   &__list {
+    display: flex;
+    column-gap: 20px;
+
+    @include mobile {
+      column-gap: 14px;
+    }
   }
 
   &__item {
+    display: flex; // чтобы размеры была не больше, чем в макете
   }
 
   &__link {
+    --size: #{rem(24)};
+
+    @include square(var(--size));
+
+    color: var(--color-light);
+
+    @include laptop {
+      --size: #{rem(20)};
+    }
   }
 }
 
