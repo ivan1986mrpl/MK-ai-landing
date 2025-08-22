@@ -1,2 +1,49 @@
 @use '../helpers' as *;
 
+.footer {
+  &__inner {
+  }
+
+  &__body {
+    padding-block: fluid(80, 40);
+  }
+
+  &__menu {
+  }
+
+  &__menu-column {
+  }
+
+  &__menu-main-link {
+  }
+
+  &__menu-list {
+  }
+
+  &__menu-item {
+  }
+
+  &__menu-link {
+  }
+
+  &__extra {
+  }
+
+  &__extra-menu {
+  }
+
+  &__extra-menu-list {
+  }
+
+  &__extra-menu-item {
+  }
+
+  &__extra-menu-link {
+  }
+
+  &__soc1al {
+  }
+
+  &__copyright {
+  }
+}
