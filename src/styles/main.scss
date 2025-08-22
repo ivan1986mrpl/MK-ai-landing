@@ -13,4 +13,10 @@
 
 @use 'blocks/header';
 @use 'blocks/footer';
+@use 'blocks/hero';
 
+
+// .header,
+.footer {
+  display: none;
+}
