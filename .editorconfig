@@ -5,7 +5,6 @@ charset = utf-8
 indent_style = space
 indent_size = 2
 end_of_line = lf
-printWidth = 140
 
 [*.md]
 trim_trailing_whitespace = false

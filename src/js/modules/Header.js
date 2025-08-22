@@ -17,14 +17,14 @@ class Header {
     this.bindEvents();
   }
 
-  onBurgerbuttonclick = () => {
+  onBurgerbuttonClick = () => {
     this.burgerbuttonElement.classList.toggle(this.stateClasses.isActive);
     this.overlayElement.classList.toggle(this.stateClasses.isActive);
     document.documentElement.classList.toggle(this.stateClasses.isLock); // html.is-lock
-  }
+  };
 
   bindEvents() {
-    this.burgerbuttonElement.addEventListener('click', this.onBurgerbuttonclick);
+    this.burgerbuttonElement.addEventListener('click', this.onBurgerbuttonClick);
   }
 }
 //  1.55
