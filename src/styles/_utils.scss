@@ -22,7 +22,7 @@
   }
 }
 
-.full-vw-line {
+.full-vw-line { // 3.13 линия за пределы контейнера влево
   position: relative;
 
   &::before,
@@ -65,24 +65,24 @@
 }
 
 .circle-icon {
-  --circleSize: #{rem(52)};
-  --circleMarginLeft: #{rem(20)};
+  --circle-size: #{rem(52)};
+  --circle-margin-left: #{rem(20)};
 
   position: relative;
-  min-height: var(--circleSize);
-  padding-right: calc(var(--circleSize) + var(--circleMarginLeft));
+  min-height: var(--circle-size);
+  padding-right: calc(var(--circle-size) + var(--circle-margin-left));
 
   @include laptop {
-    --circleSize: #{rem(44)};
-    --circleMarginLeft: #{rem(14)};
+    --circle-size: #{rem(44)};
+    --circle-margin-left: #{rem(14)};
   }
 
   @include mobile {
-    --circleSize: #{rem(40)};
+    --circle-size: #{rem(40)};
   }
 
   &::after {
-    @include square(var(--circleSize));
+    @include square(var(--circle-size));
     @include abs-y;
 
     content: '';
