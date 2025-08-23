@@ -4,13 +4,26 @@
 @use 'utils';
 @use 'globals';
 
-@use 'base/icon';
-@use 'base/logo';
 @use 'base/button';
+@use 'base/icon';
+
+@use 'base/logo';
 @use 'base/burger-button';
+@use 'blocks/header';
+
 @use 'base/badge';
 @use 'base/soc1al';
-
-@use 'blocks/header';
 @use 'blocks/footer';
 
+@use 'base/team';
+@use 'base/advantage-card';
+@use 'base/metrics';
+@use 'base/resourses-preview';
+@use 'blocks/hero';
+
+
+.header,
+.hero, // 3-37-31
+.footer {
+  // display: none !important;
+}
