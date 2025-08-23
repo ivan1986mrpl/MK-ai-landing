@@ -8,8 +8,14 @@
 @use 'base/logo';
 @use 'base/button';
 @use 'base/burger-button';
+
 @use 'base/badge';
 @use 'base/soc1al';
+
+@use 'base/team';
+@use 'base/advantage-card';
+@use 'base/metrics';
+@use 'base/resourses-preview';
 
 @use 'blocks/header';
 @use 'blocks/footer';
@@ -17,6 +23,7 @@
 
 
 // .header,
+// .hero,
 .footer {
   display: none;
 }
