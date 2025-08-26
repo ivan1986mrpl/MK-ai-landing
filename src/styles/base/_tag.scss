@@ -1,7 +1,11 @@
 @use '../helpers' as *;
 
 .tag {
+  @include fluid-text(20, 14);
+  
   padding: rem(6) rem(10);
+  color: var(--color-light); 
+  font-weight: 500;
   border-radius: rem(4);
   background-color: var(--color-dark-20);
 
