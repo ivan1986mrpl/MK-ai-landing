@@ -21,9 +21,14 @@
 @use 'base/resourses-preview';
 @use 'blocks/hero';
 
+@use 'base/tag';
+@use 'base/section';
+@use 'base/list';
+@use 'base/tile';
+@use 'base/card';
 
 .header,
-.hero, // 3-37-31
+main > *:not(:last-child), //  все секции, кроме последней
 .footer {
   // display: none !important;
 }
