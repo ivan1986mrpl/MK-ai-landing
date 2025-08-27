@@ -1,5 +1,7 @@
-import Header from './modules/Header';
+import Header from './modules/Header.js';
+import TabsCollection from './modules/Tabs.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   new Header();
+  new TabsCollection();
 });
