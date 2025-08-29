@@ -32,8 +32,10 @@
 @use 'base/blog-actions';
 @use 'base/blog-card';
 
-.header,
-main > *:not(:last-child), //  все секции, кроме последней
-.footer {
-  // display: none !important;
-}
+@use 'base/download-info';
+
+// .header,
+// main > *:not(:last-child), //  все секции, кроме последней
+// .footer {
+//   display: none !important;
+// }
