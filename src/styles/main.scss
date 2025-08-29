@@ -38,6 +38,9 @@
 @use 'base/rating-view';
 @use 'base/review-card';
 
+@use 'blocks/about';
+@use 'blocks/about-card';
+
 // .header,
 // main > *:not(:last-child), //  все секции, кроме последней
 // .footer {
