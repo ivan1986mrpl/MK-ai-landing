@@ -34,6 +34,10 @@
 
 @use 'base/download-info';
 
+@use 'base/bordered-grid';
+@use 'base/rating-view';
+@use 'base/review-card';
+
 // .header,
 // main > *:not(:last-child), //  все секции, кроме последней
 // .footer {
