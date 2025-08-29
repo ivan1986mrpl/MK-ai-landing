@@ -122,7 +122,7 @@
     justify-content: start;
     row-gap: fluid(20, 4);
 
-    &:has(> *:only-child) {
+    &:has(> *:only-child) { // 5.32.12 только те элементы, которые единственные потомки своего родителя
       justify-content: center;
     }
 
