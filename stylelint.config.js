@@ -17,7 +17,11 @@ export default {
   ],
   defaultSeverity: 'warning',
   extends: ['stylelint-config-standard-scss'],
-  plugins: ['stylelint-scss', 'stylelint-order', 'stylelint-selector-bem-pattern'],
+  plugins: [
+    'stylelint-scss',
+    'stylelint-order',
+    'stylelint-selector-bem-pattern',
+  ],
   rules: {
     'font-family-name-quotes': 'always-unless-keyword',
     'color-hex-length': 'long',
