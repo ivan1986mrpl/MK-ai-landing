@@ -10,27 +10,28 @@
   @include visually-hidden;
 }
 
-.hidden-mobile { // скрываем элементы на ширине 768 и менее
+.hidden-mobile {
+  // скрываем элементы на ширине 768 и менее
   @include mobile {
     display: none !important;
   }
 }
 
-.visible-mobile { // скрываем элементы на ширине 768 и более
+.visible-mobile {
+  // скрываем элементы на ширине 768 и более
   @include mobile-above {
     display: none !important;
   }
 }
 
-.full-vw-line { // 3.13 линия за пределы контейнера влево
+.full-vw-line {
+  // 3.13 линия за пределы контейнера влево
   position: relative;
 
   &::before,
   &::after {
     position: absolute;
-    width: calc(
-      (var(--100vw) - var(--container-width)) / 2
-    );
+    width: calc((var(--100vw) - var(--container-width)) / 2);
     height: rem(1);
     background-color: var(--color-dark-15);
   }
@@ -87,9 +88,8 @@
 
     content: '';
     right: 0;
-    background:
-      url('../assets/img/icons/arrow-top-right_black.svg') center no-repeat
-      var(--color-accent);
+    background: url('../assets/img/icons/arrow-top-right_black.svg') center
+      no-repeat var(--color-accent);
     border-radius: 50%;
   }
 }

@@ -2,6 +2,7 @@
 
 .footer {
   color: var(--color-dark-40);
+
   &__inner {
   }
 
@@ -13,7 +14,7 @@
   &__menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    align-items: start; //прижимаем вверх
+    align-items: start; // прижимаем вверх
     column-gap: fluid(80, 20);
 
     @include tablet {
@@ -35,8 +36,7 @@
         grid-column: -1 / 1;
 
         .footer__menu-list {
-          flex-direction: row;
-          flex-wrap: wrap;
+          flex-flow: row wrap;
           gap: rem(12);
         }
       }
@@ -98,7 +98,6 @@
   }
 
   &__soc1al {
-
     @include mobile {
       order: -1; //  чтобы вытянуть наверх
     }

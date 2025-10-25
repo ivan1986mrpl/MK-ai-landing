@@ -2,9 +2,10 @@
 
 .header {
   position: sticky;
+  z-index: 100;
+
   // width: 100%;
   top: 0;
-  z-index: 100;
   animation-name: scrolling-header; //  2.04
   animation-fill-mode: both;
   animation-timeline: scroll();
@@ -15,6 +16,7 @@
       box-shadow: 0 0 1rem 0 var(--color-dark-40);
     }
   }
+
   &__promo {
     padding-block: 20px;
     text-align: center;
@@ -110,8 +112,8 @@
     }
 
     &.is-active {
-      color: var(--color-light);
       font-weight: 500;
+      color: var(--color-light);
       background-color: var(--color-dark);
       border: var(--border);
       border-radius: 10px;
@@ -121,9 +123,9 @@
 
   &__contact-us-link {
     @include mobile {
+      align-self: center;
       width: 100%;
       max-width: 300px;
-      align-self: center;
     }
   }
 

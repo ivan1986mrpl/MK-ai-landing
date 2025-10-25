@@ -1,4 +1,3 @@
-
 - init: - используется для начала проекта/таска.
 - feat: - это реализованная новая функциональность из технического задания (добавил поддержку зумирования, добавил footer, добавил карточку продукта).
 - fix: - исправил ошибку в ранее реализованной функциональности.
@@ -27,14 +26,13 @@
 for branch in $(git for-each-ref --format='%(refname:short)' refs/heads/); do
   echo "🔄 Обновление ветки: $branch"
   git checkout "$branch" || continue
-  if git show-ref --verify --quiet "refs/remotes/origin/$branch"; then
+if git show-ref --verify --quiet "refs/remotes/origin/$branch"; then
     git branch --set-upstream-to=origin/$branch "$branch"      
     git pull
   else
     echo "⚠️  У ветки '$branch' нет соответствующей ветки на origin."
-  fi
+fi
 done
-
 
 - git checkout home-page
 - git merge --no-commit --no-ff home-about
