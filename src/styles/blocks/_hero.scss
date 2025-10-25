@@ -14,8 +14,8 @@
   &__body {
     grid-area: body;
     padding-top: rem(150);
-    padding-right: rem(50);
     padding-bottom: rem(100);
+    padding-right: rem(50);
 
     @include laptop {
       padding-top: rem(100);
@@ -23,9 +23,9 @@
     }
 
     @include tablet {
-      padding-right: 0;
       padding-top: rem(40);
       padding-bottom: rem(30);
+      padding-right: 0;
     }
   }
 
@@ -64,22 +64,22 @@
 
     @include tablet {
       &::before {
-        width: var(--100vw);
         right: calc(var(--container-padding-x) * -1);
+        width: var(--100vw);
       }
     }
   }
 
   &__resources-preview {
     grid-area: resources-preview;
-    padding-left: rem(80);
     padding-bottom: rem(80);
-    background:
-      url('../assets/img/resources-preview/bg.png') 0 0/cover no-repeat;
+    padding-left: rem(80);
+    background: url('../assets/img/resources-preview/bg.png') 0 0 / cover
+      no-repeat;
 
     @include laptop {
-      padding-left: rem(50);
       padding-bottom: rem(50);
+      padding-left: rem(50);
     }
 
     @include tablet-above {

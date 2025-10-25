@@ -2,8 +2,6 @@
 
 .footer {
   color: var(--color-dark-40);
-  &__inner {
-  }
 
   &__body {
     padding-block: fluid(80, 40);
@@ -13,7 +11,7 @@
   &__menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    align-items: start; //прижимаем вверх
+    align-items: start; // прижимаем вверх
     column-gap: fluid(80, 20);
 
     @include tablet {
@@ -35,15 +33,11 @@
         grid-column: -1 / 1;
 
         .footer__menu-list {
-          flex-direction: row;
-          flex-wrap: wrap;
+          flex-flow: row wrap;
           gap: rem(12);
         }
       }
     }
-  }
-
-  &__menu-main-link {
   }
 
   &__menu-list {
@@ -56,9 +50,6 @@
     display: flex;
     align-items: center;
     column-gap: 6px;
-  }
-
-  &__menu-link {
   }
 
   &__extra {
@@ -78,9 +69,6 @@
     }
   }
 
-  &__extra-menu {
-  }
-
   &__extra-menu-list {
     display: flex;
   }
@@ -94,16 +82,9 @@
     }
   }
 
-  &__extra-menu-link {
-  }
-
   &__soc1al {
-
     @include mobile {
       order: -1; //  чтобы вытянуть наверх
     }
-  }
-
-  &__copyright {
   }
 }

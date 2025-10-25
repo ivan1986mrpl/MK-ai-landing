@@ -18,8 +18,8 @@
   &.is-active {
     .burger-button__line {
       &:first-child {
-        rotate: 45deg;
         transform-origin: 0;
+        rotate: 45deg;
         translate: 0.25em -0.1em;
       }
 
