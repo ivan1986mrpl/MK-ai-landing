@@ -21,10 +21,16 @@ class Tabs extends BaseComponent {
   constructor(rootElement) {
     super();
     this.rootElement = rootElement;
-    this.buttonElements = this.rootElement.querySelectorAll(this.selectors.button);
-    this.contentElements = this.rootElement.querySelectorAll(this.selectors.content);
+    this.buttonElements = this.rootElement.querySelectorAll(
+      this.selectors.button
+    );
+    this.contentElements = this.rootElement.querySelectorAll(
+      this.selectors.content
+    );
     this.state = this.getProxyState({
-      activeTabIndex: [...this.buttonElements].findIndex((buttonElement) => buttonElement.classList.contains(this.stateClasses.isActive)),
+      activeTabIndex: [...this.buttonElements].findIndex((buttonElement) =>
+        buttonElement.classList.contains(this.stateClasses.isActive)
+      ),
     });
     this.limitTabsIndex = this.buttonElements.length - 1;
     this.bindEvents();
@@ -37,8 +43,14 @@ class Tabs extends BaseComponent {
       const isActive = index === activeTabIndex;
 
       buttonElement.classList.toggle(this.stateClasses.isActive, isActive);
-      buttonElement.setAttribute(this.stateAttributes.ariaSelected, isActive.toString());
-      buttonElement.setAttribute(this.stateAttributes.tabIndex, isActive ? '0' : '-1');
+      buttonElement.setAttribute(
+        this.stateAttributes.ariaSelected,
+        isActive.toString()
+      );
+      buttonElement.setAttribute(
+        this.stateAttributes.tabIndex,
+        isActive ? '0' : '-1'
+      );
     });
 
     this.contentElements.forEach((contentElement, index) => {
@@ -54,13 +66,19 @@ class Tabs extends BaseComponent {
   }
 
   previousTab = () => {
-    const newTabIndex = this.state.activeTabIndex === 0 ? this.limitTabsIndex : this.state.activeTabIndex - 1;
+    const newTabIndex =
+      this.state.activeTabIndex === 0
+        ? this.limitTabsIndex
+        : this.state.activeTabIndex - 1;
 
     this.activateTab(newTabIndex);
   };
 
   nextTab = () => {
-    const newTabIndex = this.state.activeTabIndex === this.limitTabsIndex ? 0 : this.state.activeTabIndex + 1;
+    const newTabIndex =
+      this.state.activeTabIndex === this.limitTabsIndex
+        ? 0
+        : this.state.activeTabIndex + 1;
 
     this.activateTab(newTabIndex);
   };

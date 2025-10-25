@@ -1,6 +1,7 @@
 @use '../helpers' as *;
 
-.icon { // иконка рядом с текстом справа
+.icon {
+  // иконка рядом с текстом справа
   display: inline-flex;
   align-items: center;
   column-gap: rem(10);

@@ -7,5 +7,5 @@ export default {
   trailingComma: 'es5', //  Добавляет запятые в объектах и массивах (ES5+)
   bracketSpacing: true, //  Пробелы между скобками объектов: { foo: bar }
   arrowParens: 'always', //  Всегда ставить скобки у стрелочных функций
-  printWidth: 140,
+  printWidth: 80,
 };
