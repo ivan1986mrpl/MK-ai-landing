@@ -12,8 +12,12 @@ class Header {
 
   constructor() {
     this.rootElement = document.querySelector(this.selectors.root);
-    this.overlayElement = this.rootElement.querySelector(this.selectors.overlay);
-    this.burgerbuttonElement = this.rootElement.querySelector(this.selectors.burgerButton);
+    this.overlayElement = this.rootElement.querySelector(
+      this.selectors.overlay
+    );
+    this.burgerbuttonElement = this.rootElement.querySelector(
+      this.selectors.burgerButton
+    );
     this.bindEvents();
   }
 
@@ -24,7 +28,10 @@ class Header {
   };
 
   bindEvents() {
-    this.burgerbuttonElement.addEventListener('click', this.onBurgerbuttonClick);
+    this.burgerbuttonElement.addEventListener(
+      'click',
+      this.onBurgerbuttonClick
+    );
   }
 }
 //  1.55
