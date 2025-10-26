@@ -1,7 +1,8 @@
-# Future Tech 
+# Future Tech
 
 ## Description
-landing 
+
+landing
 
 1. Design: [link](https://www.figma.com/design/YzTDRV7OaSoeCUBNYaoCZV/FutureTech?node-id=18-214&p=f)
 
@@ -14,8 +15,6 @@ landing
 
 5. Google Page Speed:
    <img  alt="image" src="https://github.com/user-attachments/assets/4b4432ec-d4c1-4b3f-96e6-f29a1bf6428f" />
-
-
 
 - init: - используется для начала проекта/таска.
 - feat: - это реализованная новая функциональность из технического задания (добавил поддержку зумирования, добавил footer, добавил карточку продукта).

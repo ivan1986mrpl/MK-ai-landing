@@ -35,9 +35,11 @@
 @use 'blocks/summary';
 @use 'blocks/news-card';
 @use 'blocks/news';
+@use 'blocks/video-player';
+@use 'blocks/video-card';
 
 // .header,
-// main > *:not(:last-child), //  все секции, кроме последней
+// main > *:not(:last-child),
 // .footer {
 //   display: none !important;
 // }
