@@ -35,7 +35,7 @@
 
   --100vw: calc(100vw - var(--scrollbar-width));
 
-  --bgImg: url('../../assets/img/blog-details/banner.webp');
+  --bgImg: url('../assets/img/blog-details/banner.webp');
 
   @include laptop {
     --container-width: #{rem(1280)};
