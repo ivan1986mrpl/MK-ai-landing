@@ -6,7 +6,7 @@
  * Decimal and negative numbers are supported,
  * but only when the sign or decimal part follows the number.
  *
- * Usage examples:
+ * Usage:
  * <span data-animation-counter></span>
  * <span data-animation-counter>1200+</span>
  * <span
