@@ -90,7 +90,6 @@
       </header>
       <main class="page">
         <section id="hero" class="page__hero hero" aria-labelledby="hero-title">
-          <!-- указываем заголовку секции id и передаем его в aria-labelledby="hero-title" секции -->
           <div class="hero__main container">
             <div class="hero__body">
               <p class="hero__subtitle">Your Journey to Tomorrow Begins Here</p>
@@ -113,19 +112,22 @@
                 <div class="metrics__item">
                   <dt class="metrics__key">Resources available</dt>
                   <dd class="metrics__value h3">
-                    300<span class="metrics__sign">+</span>
+                    <span data-animation-counter>300</span>
+                    <span class="metrics__sign">+</span>
                   </dd>
                 </div>
                 <div class="metrics__item">
                   <dt class="metrics__key">Total Downloads</dt>
                   <dd class="metrics__value h3">
-                    12k<span class="metrics__sign">+</span>
+                    <span data-animation-counter>12k</span>
+                    <span class="metrics__sign">+</span>
                   </dd>
                 </div>
                 <div class="metrics__item">
                   <dt class="metrics__key">Active Users</dt>
                   <dd class="metrics__value h3">
-                    10k<span class="metrics__sign">+</span>
+                    <span data-animation-counter>10k</span>
+                    <span class="metrics__sign">+</span>
                   </dd>
                 </div>
               </dl>
@@ -167,13 +169,16 @@
               </div>
               <div class="resources-preview__body">
                 <p class="resources-preview__title h5">
-                  Explore 1000+ resources
+                  Explore <span data-animation-counter>1000+</span> resources
                 </p>
                 <p class="resources-preview__subtitle">
                   Over 1,000 articles on emerging tech trends and breakthroughs.
                 </p>
               </div>
-              <a href="#" class="resources-preview__button button">
+              <a
+                href="./resources.html"
+                class="resources-preview__button button"
+              >
                 <span class="icon icon--yellow-arrow">Explore Resources</span>
               </a>
             </div>
@@ -922,7 +927,7 @@
                 </h2>
               </div>
               <div class="section__actions">
-                <a class="section__link button" href="/">
+                <a class="section__link button" href="./resources.html">
                   <span class="icon icon--yellow-arrow"
                     >View All Resources</span
                   >
@@ -966,7 +971,9 @@
                       <div class="download-info tile">
                         <div class="download-info__body">
                           <p class="download-info__title">Downloaded By</p>
-                          <p class="download-info__subtitle h5">10k + Users</p>
+                          <p class="download-info__subtitle h5">
+                            <span data-animation-counter>30</span>k + Users
+                          </p>
                         </div>
                         <div class="download-info__team team">
                           <img
@@ -1087,7 +1094,9 @@
                       <div class="download-info tile">
                         <div class="download-info__body">
                           <p class="download-info__title">Downloaded By</p>
-                          <p class="download-info__subtitle h5">10k + Users</p>
+                          <p class="download-info__subtitle h5">
+                            <span data-animation-counter>25</span>k + Users
+                          </p>
                         </div>
                         <div class="download-info__team team">
                           <img
@@ -1507,7 +1516,7 @@
           <div class="footer__body">
             <nav class="footer__menu">
               <div class="footer__menu-column">
-                <a href="#" class="footer__menu-main-link h6">Home</a>
+                <a href="./index.html" class="footer__menu-main-link h6">Home</a>
                 <ul class="footer__menu-list">
                   <li class="footer__menu-item">
                     <a href="#" class="footer__menu-link">Features</a>
@@ -1531,7 +1540,7 @@
                 </ul>
               </div>
               <div class="footer__menu-column">
-                <a href="#" class="footer__menu-main-link h6">News</a>
+                <a href="./news.html" class="footer__menu-main-link h6">News</a>
                 <ul class="footer__menu-list">
                   <li class="footer__menu-item">
                     <a href="#" class="footer__menu-link">Trending Stories</a>
@@ -1556,7 +1565,7 @@
                 </ul>
               </div>
               <div class="footer__menu-column">
-                <a href="#" class="footer__menu-main-link h6">Blogs</a>
+                <a href="./blog.html" class="footer__menu-main-link h6">Blogs</a>
                 <ul class="footer__menu-list">
                   <li class="footer__menu-item">
                     <a href="#" class="footer__menu-link">Quantum Computing</a>
@@ -1581,7 +1590,7 @@
                 </ul>
               </div>
               <div class="footer__menu-column">
-                <a href="#" class="footer__menu-main-link h6">Podcasts</a>
+                <a href="./podcasts.html" class="footer__menu-main-link h6">Podcasts</a>
                 <ul class="footer__menu-list">
                   <li class="footer__menu-item">
                     <a href="#" class="footer__menu-link">AI Revolution</a>
@@ -1596,7 +1605,7 @@
                 </ul>
               </div>
               <div class="footer__menu-column">
-                <a href="#" class="footer__menu-main-link h6">Resources</a>
+                <a href="./resources.html" class="footer__menu-main-link h6">Resources</a>
                 <ul class="footer__menu-list">
                   <li class="footer__menu-item">
                     <a href="#" class="footer__menu-link button">
