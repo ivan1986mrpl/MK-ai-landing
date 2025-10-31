@@ -5,9 +5,11 @@ import VideoPlayerCollection from './modules/VideoPlayer.js';
 import InputMaskCollection from './modules/InputMask.js';
 import SelectCollection from './modules/Select.js';
 import defineScrollBarWidthCSSVar from './utils/defineScrollBarWidthCSSVar.js';
+import CounterAnimationCollection from './modules/AnimCounter.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   new Header();
+  new CounterAnimationCollection();
   new TabsCollection();
   new VideoPlayerCollection();
   new ExpandableContentCollection();
