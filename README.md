@@ -6,7 +6,7 @@
 
 - Design: [link](https://www.figma.com/design/YzTDRV7OaSoeCUBNYaoCZV/FutureTech?node-id=18-214&p=f)
 
-- Deploy: [link](https://ivan1986mrpl.github.io/MK-ai-landing/dist/)
+- Deploy: [link](https://ivan-mr1.github.io/MK-ai-landing/dist/)
 
 - Technologies: HTML, SCSS, Javascript, Vite, Eslint, Stylelint, Prettier
 
